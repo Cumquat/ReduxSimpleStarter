@@ -12,7 +12,11 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/'
     },
-    
+    devServer: {
+        historyApiFallback: true,
+        contentBase: './',
+        hot: true
+    },
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
