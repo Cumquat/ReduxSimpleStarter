@@ -1,14 +1,17 @@
-import React, {Component} from 'react';
-import Header               from './layout/header';
-import Footer               from './layout/footer';
-export default class App extends Component {
-    render() {
-        return (
-            <div className="wrapper">
-                <Header />
-                {this.props.children}
-                <Footer />
-            </div>
-        );
-    }
-}
+import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
+
+import Header from './layout/header';
+import Routes from '../routes/routes';
+
+const App = () => (
+    <Router>
+        <div>
+            <Header />
+            <Routes />
+        
+        </div>
+    </Router>
+);
+
+export default App
