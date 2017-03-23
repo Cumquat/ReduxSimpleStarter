@@ -15,6 +15,6 @@ const Routes = () => (
     
         <Route component={NotFound}/>
     </Switch>
-)
+);
 
 export default Routes;
